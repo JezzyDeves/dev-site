@@ -12,7 +12,8 @@ export function Contact() {
           rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
           className="font-mono text-sm text-primary transition-colors hover:text-foreground"
         >
-          {link.label} ↗
+          {link.label}
+          {link.href.startsWith("http") ? " ↗" : ""}
         </a>
       ))}
     </div>
