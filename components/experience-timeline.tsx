@@ -5,7 +5,10 @@ export function ExperienceTimeline() {
   return (
     <ol className="relative ml-2 border-l border-border">
       {experience.map((role) => (
-        <li key={`${role.company}-${role.period}`} className="relative pb-10 pl-6 last:pb-0">
+        <li
+          key={`${role.company}-${role.period}`}
+          className="relative pb-10 pl-6 last:pb-0"
+        >
           <span className="absolute -left-[5px] top-1.5 h-2.5 w-2.5 rounded-full bg-primary" />
           <div className="flex flex-wrap items-baseline justify-between gap-x-3">
             <h3 className="font-heading text-base font-semibold text-foreground">

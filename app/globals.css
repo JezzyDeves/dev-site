@@ -90,31 +90,31 @@
   --card-foreground: oklch(0.92 0.02 70);
   --popover: oklch(0.15 0.014 55);
   --popover-foreground: oklch(0.92 0.02 70);
-  --primary: oklch(0.70 0.16 55);
+  --primary: oklch(0.7 0.16 55);
   --primary-foreground: oklch(0.15 0.014 55);
-  --secondary: oklch(0.20 0.018 55);
+  --secondary: oklch(0.2 0.018 55);
   --secondary-foreground: oklch(0.92 0.02 70);
-  --muted: oklch(0.20 0.018 55);
+  --muted: oklch(0.2 0.018 55);
   --muted-foreground: oklch(0.62 0.04 60);
   --accent: oklch(0.24 0.04 55);
   --accent-foreground: oklch(0.92 0.02 70);
-  --destructive: oklch(0.62 0.20 25);
+  --destructive: oklch(0.62 0.2 25);
   --border: oklch(0.92 0.02 70 / 10%);
   --input: oklch(0.92 0.02 70 / 15%);
-  --ring: oklch(0.70 0.16 55 / 60%);
-  --chart-1: oklch(0.70 0.16 55);
-  --chart-2: oklch(0.60 0.12 50);
-  --chart-3: oklch(0.50 0.09 45);
-  --chart-4: oklch(0.40 0.06 50);
-  --chart-5: oklch(0.30 0.04 55);
+  --ring: oklch(0.7 0.16 55 / 60%);
+  --chart-1: oklch(0.7 0.16 55);
+  --chart-2: oklch(0.6 0.12 50);
+  --chart-3: oklch(0.5 0.09 45);
+  --chart-4: oklch(0.4 0.06 50);
+  --chart-5: oklch(0.3 0.04 55);
   --sidebar: oklch(0.15 0.014 55);
   --sidebar-foreground: oklch(0.92 0.02 70);
-  --sidebar-primary: oklch(0.70 0.16 55);
+  --sidebar-primary: oklch(0.7 0.16 55);
   --sidebar-primary-foreground: oklch(0.15 0.014 55);
   --sidebar-accent: oklch(0.24 0.04 55);
   --sidebar-accent-foreground: oklch(0.92 0.02 70);
   --sidebar-border: oklch(0.92 0.02 70 / 10%);
-  --sidebar-ring: oklch(0.70 0.16 55 / 60%);
+  --sidebar-ring: oklch(0.7 0.16 55 / 60%);
 }
 
 @layer base {
@@ -130,19 +130,26 @@
 }
 
 @keyframes ember-breath {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0.82;
-    text-shadow: 0 0 24px oklch(0.70 0.16 55 / 0.30), 0 0 6px oklch(0.78 0.14 60 / 0.25);
+    text-shadow:
+      0 0 24px oklch(0.7 0.16 55 / 0.3),
+      0 0 6px oklch(0.78 0.14 60 / 0.25);
   }
   50% {
     opacity: 1;
-    text-shadow: 0 0 52px oklch(0.70 0.16 55 / 0.55), 0 0 12px oklch(0.80 0.14 62 / 0.40);
+    text-shadow:
+      0 0 52px oklch(0.7 0.16 55 / 0.55),
+      0 0 12px oklch(0.8 0.14 62 / 0.4);
   }
 }
 
 .ember {
   color: oklch(0.74 0.15 58);
-  text-shadow: 0 0 32px oklch(0.70 0.16 55 / 0.40), 0 0 8px oklch(0.78 0.14 60 / 0.30);
+  text-shadow:
+    0 0 32px oklch(0.7 0.16 55 / 0.4),
+    0 0 8px oklch(0.78 0.14 60 / 0.3);
 }
 
 @media (prefers-reduced-motion: no-preference) {

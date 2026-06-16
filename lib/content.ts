@@ -17,68 +17,37 @@ export interface SocialLink {
   href: string;
 }
 
-// TODO: replace with your real one-line intro.
 export const intro =
-  "Software engineer building reliable systems and clean interfaces.";
+  "Software engineer building reliable systems. Augmented with AI.";
 
 // TODO: replace placeholder projects with your real work.
-export const projects: Project[] = [
-  {
-    title: "Project Atlas",
-    description: "Distributed graph store with a query planner and live subscriptions.",
-    tags: ["Go", "Rust", "gRPC"],
-    href: "#",
-  },
-  {
-    title: "Realtime Sync Engine",
-    description: "CRDT-based sync layer powering offline-first collaborative editing.",
-    tags: ["TypeScript", "WebSockets"],
-    href: "#",
-  },
-  {
-    title: "Ledger UI",
-    description: "Fintech dashboard for reconciliation and double-entry accounting.",
-    tags: ["React", "Next.js", "D3"],
-    href: "#",
-  },
-  {
-    title: "Pulse",
-    description: "Observability platform with high-cardinality metrics and tracing.",
-    tags: ["Go", "ClickHouse"],
-    href: "#",
-  },
-];
+export const projects: Project[] = [];
 
-// TODO: replace placeholder roles with your real experience.
 export const experience: Role[] = [
   {
-    title: "Staff Software Engineer",
-    company: "Acme",
-    period: "2022 — Present",
-    summary: "Lead platform architecture and developer experience.",
-  },
-  {
-    title: "Senior Software Engineer",
-    company: "Globex",
-    period: "2019 — 2022",
-    summary: "Built core services and scaled the data pipeline.",
-  },
-  {
     title: "Software Engineer",
-    company: "Initech",
-    period: "2016 — 2019",
+    company: "Seven Corners Inc.",
+    period: "2021 — Present",
+    summary:
+      "Build and maintain core applications across the travel insurance business — the customer-facing purchase funnel for insurance products, the backend APIs powering it, and claims processing systems including BOP claims. Led large-scale migrations of legacy sites onto modern stacks and drove innovation by introducing new technologies that improved reliability and developer velocity.",
   },
 ];
 
-// TODO: replace with your real skills.
 export const skills: string[] = [
-  "TypeScript", "React", "Next.js", "Node.js", "Go", "Rust",
-  "PostgreSQL", "Distributed Systems", "AWS", "Docker",
+  "TypeScript",
+  "React",
+  "Next.js",
+  "Node.js",
+  "Go",
+  "Rust",
+  "PostgreSQL",
+  "AWS",
+  "Docker",
+  "SvelteKit",
+  "Redis",
+  "Bun",
 ];
 
-// email + github are real; TODO: set your real LinkedIn URL.
 export const contact: SocialLink[] = [
-  { label: "Email", href: "mailto:jdr2045@gmail.com" },
   { label: "GitHub", href: "https://github.com/JezzyDeves" },
-  { label: "LinkedIn", href: "https://linkedin.com/in/your-handle" },
 ];

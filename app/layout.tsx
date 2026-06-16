@@ -3,9 +3,12 @@ import { Geist, Geist_Mono, Inter, Oxanium } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 
-const oxaniumHeading = Oxanium({subsets:['latin'],variable:'--font-heading'});
+const oxaniumHeading = Oxanium({
+  subsets: ["latin"],
+  variable: "--font-heading",
+});
 
-const inter = Inter({subsets:['latin'],variable:'--font-sans'});
+const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,7 +22,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "jonathon.dev",
-  description: "Portfolio of Jonathon — software engineer. Selected work, experience, and contact.",
+  description:
+    "Portfolio of Jonathon — software engineer. Selected work, experience, and contact.",
 };
 
 export default function RootLayout({
@@ -30,7 +34,15 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={cn("dark h-full", "antialiased", geistSans.variable, geistMono.variable, "font-sans", inter.variable, oxaniumHeading.variable)}
+      className={cn(
+        "dark h-full",
+        "antialiased",
+        geistSans.variable,
+        geistMono.variable,
+        "font-sans",
+        inter.variable,
+        oxaniumHeading.variable,
+      )}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
